@@ -70,7 +70,7 @@ h1,h2,h3,h4 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 h2 {
     font-size: 2rem;
@@ -88,7 +88,7 @@ p {
 
 @media screen and (min-width:800px) {
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     h2 {
         font-size: 2.5rem;
@@ -125,4 +125,59 @@ GLOBAL-CLASSES
 .btn:hover {
     background: var(--clr-primary-8);
     color: var(--clr-primary-1);
+}
+
+/* 
+=====================
+HERO
+=====================
+*/
+
+.hero {
+    min-height: 100vh;
+    background: var(--clr-primary-5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-banner {
+    text-align: center;
+    color: var(--clr-white);
+    padding: 0 3rem;
+}
+.hero-banner p {
+    color: var(--clr-white);
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.125rem;
+}
+.hero-btn {
+    background: var(--clr-white);
+    color: var(--clr-primary-5);
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+}
+.hero-btn:hover {
+    background: transparent;
+    color: var(--clr-white);
+    border-color: var(--clr-white);
+}
+@media screen and (min-width:768px) {
+    .hero {
+        background: linear-gradient(to right, rgba(44,174,186,0.7),rgba(0,0,0,0.7)),url("../assets/images/bcg/hero-bcg.jpg") center/cover no-repeat fixed;
+    }
+    .hero-banner {
+        padding: 0;
+    }
+
+    .hero-banner p {
+        max-width: 40rem;
+    }
+}
+
+@media screen and (min-width:892px) {
+    .hero-banner p {
+        max-width: 50rem;
+    }
 }
