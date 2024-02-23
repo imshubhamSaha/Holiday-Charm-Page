@@ -1,0 +1,128 @@
+/* 
+=====================
+FONTS
+=====================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* 
+=====================
+VARIABLES- GLOBAL
+=====================
+*/
+:root {
+  --clr-primary-1: hsl(184, 91%, 17%);
+  --clr-primary-5: hsl(185, 62%, 45%);
+  --clr-primary-7: hsl(184, 65%, 59%);
+  --clr-primary-8: hsl(184, 80%, 74%);
+  --clr-grey-1: hsl(208, 63%, 16%);
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-white:#fff;
+  --clr-black:#222;
+  --ff-primary:"lato","sans-serif";
+  --spacing:0.25rem;
+  --line-height:1.5;
+  --radius:0.5rem;
+  --transition:all 0.3s linear;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+   
+}
+/* 
+=====================
+GLOBAL-STYLES
+=====================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-primary);
+    background: var(--clr-white);
+    color: var(--clr-grey-1);
+    line-height: var(--line-height);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1,h2,h3,h4 {
+    letter-spacing: var(--spacing);
+    line-height: 1.25;
+    text-transform: capitalize;
+    margin-bottom: 0.75rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 0.875rem;
+}
+p {
+    margin-bottom: 1.25rem;
+    color: var(--clr-grey-5);
+}
+
+@media screen and (min-width:800px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4,body {
+        font-size: 1rem;
+    }
+    h1,h2,h3,h4 {
+        line-height: 1;
+    }
+}
+/* 
+=====================
+GLOBAL-CLASSES
+=====================
+*/
+
+.btn {
+    text-transform: uppercase;
+    background: var(--clr-primary-5);
+    color: var(--clr-white);
+    padding: 0.375rem 0.75rem;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    transition: var(--transition);
+    font-size: 0.875rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.btn:hover {
+    background: var(--clr-primary-8);
+    color: var(--clr-primary-1);
+}
