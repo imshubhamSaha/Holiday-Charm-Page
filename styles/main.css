@@ -336,17 +336,16 @@ SERVICES
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        gap: 1rem;
     }
     .service {
         flex: 0 0 calc(50% - 1rem);
-        margin-right: auto;
-        margin-left: auto;
+
     }
     .service-info {
         background: var(--clr-primary-8);
         height: 10rem;
         max-height: 10rem;
-        max-width: 18rem;
     }
     .service-title,.service-text {
         transition: var(--transition);
@@ -394,15 +393,21 @@ SERVICES
     .service {
         display: flex;
         gap:1rem;
+        position: relative;
     }
     .service-icon {
         align-self: start;
+        position: absolute;
+        padding: 0;
+        border-radius: 50%;
+        background: none;
+        color: rgb(218, 11, 11);
+        font-size: 1.5rem;
     }
 
     .service-info {
         background: var(--clr-primary-8);
         height: 10rem;
         max-height: 10rem;
-        max-width: 15rem;
     }
 }
