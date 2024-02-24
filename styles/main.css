@@ -19,6 +19,7 @@ VARIABLES- GLOBAL
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-7: hsl(211, 27%, 70%);
   --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
   --clr-black:#222;
   --ff-primary:"lato","sans-serif";
@@ -229,6 +230,9 @@ ABOUT
 .about-text {
     margin-bottom: 0;
 }
+.about-btn {
+    border-radius: 0.5rem;
+}
 @media screen and (min-width:992px) {
     .about-center {
         display: flex;
@@ -276,5 +280,129 @@ ABOUT
     .about-img:hover::before, .about-img:hover::after {
         top:0;
         left:0;
+    }
+}
+
+/* 
+=====================
+SERVICES
+=====================
+*/
+.services {
+    background: var(--clr-grey-10);
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 3rem;
+    transition: var(--transition);
+}
+.service-icon {
+    transition: var(--transition);
+    background: var(--clr-primary-5);
+    color:var(--clr-primary-1);
+    padding: 0.5rem;
+    display:inline-block ;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+}
+.service-title {
+    font-family: var(--ff-secondary);
+    font-size: 1.5rem;
+    color: rgba(188, 138, 44, 0.545)
+}
+.service-text {
+    max-width: 20rem;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.25rem;
+}
+.service-text span {
+    text-transform: uppercase;
+    color: var(--clr-grey-1);
+    background: var(--clr-grey-8);
+}
+@media screen and (max-width:576px) {
+    .service:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .service:hover .service-icon{
+        transform: translateY(-32px);
+    }
+}
+@media screen and (min-width:576px) {
+    .service-center {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .service {
+        flex: 0 0 calc(50% - 1rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .service-info {
+        background: var(--clr-primary-8);
+        height: 10rem;
+        max-height: 10rem;
+        max-width: 18rem;
+    }
+    .service-title,.service-text {
+        transition: var(--transition);
+        opacity: 0;
+    }
+    #flight, #car, #hotel, #bus {
+        border-radius: 0.5rem;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #flight {
+        background-image: url("../assets/images/services-bcg/flight.jpg");   
+    }
+    #car {
+        background-image: url("../assets/images/services-bcg/car.jpg");
+    }
+    #hotel {
+        background-image: url("../assets/images/services-bcg/hotel.jpg");
+    }
+    #bus {
+        background-image: url("../assets/images/services-bcg/bus.jpg");
+    }
+    .service:hover .service-title, .service:hover .service-text{
+        opacity: 1;
+    }
+    .service:hover #flight, .service:hover #hotel, .service:hover #car, .service:hover #bus {
+        transition: var(--transition);
+        background-image: none;
+        padding-top: 2rem;
+        
+    }
+}
+@media screen and (min-width:692px) {
+.service {
+    flex: 0 0 calc(33.33% - 1rem);
+    }
+}
+@media screen and (min-width:1170px) {
+    .service {
+        flex: 0 0 calc(25% - 1rem);
+    }
+}
+@media screen and (min-width:1170px) {
+    .service {
+        display: flex;
+        gap:1rem;
+    }
+    .service-icon {
+        align-self: start;
+    }
+
+    .service-info {
+        background: var(--clr-primary-8);
+        height: 10rem;
+        max-height: 10rem;
+        max-width: 15rem;
     }
 }
