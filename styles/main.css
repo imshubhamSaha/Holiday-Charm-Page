@@ -335,11 +335,11 @@ SERVICES
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 0 1rem;
     }
     .service {
         flex: 0 0 calc(50% - 1rem);  
-
+        
     }
     .service-info {
         background: var(--clr-primary-8);
@@ -375,7 +375,6 @@ SERVICES
         transition: var(--transition);
         background-image: none;
         padding-top: 2rem;
-        
     }
 }
 @media screen and (min-width:692px) {
