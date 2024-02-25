@@ -258,13 +258,11 @@ ABOUT
 }
 
 @media screen and (min-width:1170px) {
-    .about-img {
-        transition: all 5s linear;
-    }
     .about-img::before {
         top: -1rem;
         left: -1rem;
         z-index: -2;
+        transition: var(--transition);
     }
     .about-img::after{
         content:"";
@@ -276,6 +274,7 @@ ABOUT
         left: -0.3rem;
         box-sizing: border-box;
         z-index: -1;
+        transition: var(--transition);
     }
     .about-img:hover::before, .about-img:hover::after {
         top:0;
