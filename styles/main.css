@@ -505,5 +505,73 @@ FEATURED TOURS
         flex: 0 0 calc(33.333% - 2rem);
     }
 }
+/* 
+=====================
+CONTACT
+=====================
+*/
+.contact {
+    background: var(--clr-primary-5);
+}
 
+.contact-title {
+    color: var(--clr-white);
+}
+.contact-title h3{
+    font-size:  1.25rem;
+}
+.contact-title p{
+    color: var(--clr-primary-7);
+    font-size: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    max-width: 28rem;
+}
+
+.form-control {
+    flex:1 1 auto ;
+    color: var(--clr-grey-5);
+}
+
+.form-control, .btn-submit {
+    padding: 0.375rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5; 
+    font-weight: 400;
+    letter-spacing: var(--spacing);
+    border: transparent;
+    background: var(--clr-white);
+}
+.form-control::placeholder {
+    color: inherit;
+}
+.btn-submit {
+    text-transform: capitalize;
+    font-family: var(--ff-secondary);
+    font-weight: 700;
+    margin-left: 0.5rem;
+    background: var(--clr-primary-8);
+    color: var(--clr-primary-1);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn-submit:hover {
+    color: var(--clr-primary-5);
+    background: var(--clr-primary-1);
+}
+@media screen and (min-width:992px) {
+    .contact-center {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .contact-form {
+        align-self: flex-start;
+        flex: 1 1 auto;
+        max-width: 100%;
+        padding-left: 2rem;
+    }
+}
 
