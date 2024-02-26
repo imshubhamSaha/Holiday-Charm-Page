@@ -355,6 +355,7 @@ SERVICES
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        transition: var(--transition);
     }
     #flight {
         background-image: url("../assets/images/services-bcg/flight.jpg");   
@@ -369,6 +370,7 @@ SERVICES
         background-image: url("../assets/images/services-bcg/bus.jpg");
     }
     .service:hover .service-title, .service:hover .service-text{
+        transition: var(--transition);
         opacity: 1;
     }
     .service:hover #flight, .service:hover #hotel, .service:hover #car, .service:hover #bus {
@@ -575,3 +577,52 @@ CONTACT
     }
 }
 
+/* 
+=====================
+GALLERY
+=====================
+*/
+.gallery-img-container {
+    position: relative;
+    background: var(--clr-primary-5);
+}
+.gallery-img {
+    height: 17rem;
+    transition: var(--transition);
+    object-fit: cover;
+}
+.gallery-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    color: var(--clr-white);
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: var(--transition);
+}
+.gallery-img-container:hover .gallery-img {
+    opacity: 0.5;
+}
+.gallery-img-container:hover .gallery-icon {
+    opacity: 1;
+}
+@media screen and (min-width:768px) {
+    .gallery-center {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery-img-container {
+       flex: 0 0 50%;
+    }
+}
+@media screen and (min-width:992px) {
+    .gallery-img-container {
+        flex: 0 0 25%;
+    }
+}
+/* 
+=====================
+FOOTER
+=====================
+*/
