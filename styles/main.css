@@ -671,9 +671,11 @@ FOOTER
 }
 
 .message {
-    word-spacing: var(--spacing);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 700;
-    position: relative;
+    gap: 0.5rem;
 }
 .message span {
     color: red;
@@ -685,13 +687,4 @@ FOOTER
     width: 1.5rem;
     height: 1rem;
     object-fit: cover;
-}
-.footer-flag {
-    display: inline-block; 
-    position: relative;
-}
-.icon-flag {
-    position: absolute;
-    bottom: 10%;
-    transform: translate(0 , 25%);
 }
