@@ -626,3 +626,72 @@ GALLERY
 FOOTER
 =====================
 */
+.footer {
+    background: var(--clr-grey-1);
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.footer-links,.footer-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+.footer-link {
+    color: var(--clr-white);
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    letter-spacing: var(--spacing);
+    transition: var(--transition);
+}
+
+.footer-link:hover {
+    color: var(--clr-primary-5);
+}
+
+.footer-icon {
+    color: var(--clr-primary-8);
+    font-size: 2rem;
+    margin-right: 1rem;
+    transition: var(--transition);
+}
+.footer-icon:hover {
+    color: var(--clr-primary-5);
+}
+.footer-text {
+    color: var(--clr-white);
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+}
+.footer-text a {
+    color: var(--clr-grey-5);
+    font-weight: 700;
+}
+
+.message {
+    word-spacing: var(--spacing);
+    font-weight: 700;
+    position: relative;
+}
+.message span {
+    color: red;
+}
+.message img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1.5rem;
+    height: 1rem;
+    object-fit: cover;
+}
+.footer-flag {
+    display: inline-block; 
+    position: relative;
+}
+.icon-flag {
+    position: absolute;
+    bottom: 10%;
+    transform: translate(0 , 25%);
+}
