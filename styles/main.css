@@ -518,9 +518,11 @@ CONTACT
 .contact-title h3{
     font-size:  1.25rem;
 }
-.contact-title p{
+.contact-title a{
     color: var(--clr-primary-7);
     font-size: 1rem;
+    margin-bottom: 1.25rem;
+    display: inline-block;
 }
 
 .contact-form {
