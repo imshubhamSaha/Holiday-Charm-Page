@@ -260,10 +260,12 @@ NAVBAR
                 align-items: center;
         flex-wrap: wrap;
     }
+  
     .nav-links{
         height: auto;
         display: -webkit-box;
         display: flex;
+        gap: 1rem;
     }
     .nav-header {
         padding: 0;
